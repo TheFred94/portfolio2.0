@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Satoshi-Black';
+  src: url('./../fonts/Satoshi-Black.ttf');
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+@font-face {
+  font-family: 'Satoshi-BlackItalic';
+  src: url('./../fonts/Satoshi-BlackItalic.ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('./../fonts/Satoshi-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('./../fonts/Satoshi-Medium.otf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('./../fonts/Satoshi-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'JetBrainsMono-ExtraBoldItalic';
+  src: url('./../fonts/JetBrainsMono-ExtraBoldItalic.ttf');
+  font-weight: bold;
+}

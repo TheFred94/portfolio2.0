@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Bg: #0a0a0d;
+  --Tx: #ffffff;
+  --Sc: #151619;
+  --St: #2e2e33;
+  --TxGray: #a9a9a9;
+  --Ac: #ffba00;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--Tx);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--Tx);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.h2-alt {
+  font-size: 2.5rem;
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: var(--Tx);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2.25rem;
+  color: var(--Tx);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+  color: var(--Tx);
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--Tx);
+  font-weight: 400;
+}
+
+.p-alt {
+  font-size: 1rem;
+  color: var(--Tx);
+  font-weight: 400;
+}
