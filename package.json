@@ -10,7 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@geist-ui/icons": "^1.0.2",
     "nuxt": "^3.11.2",
+    "radix-vue": "^1.8.1",
     "vue": "^3.4.27",
     "vue-router": "^4.3.2"
   },

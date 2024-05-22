@@ -8,4 +8,8 @@
     <p class="font-paragraph">Paragraph</p>
     <p class="font-paragraphAc p-alt">Paragraph Accent</p>
   </div>
+
+  <Accordions />
 </template>
+
+<script setup lang="ts"></script>
