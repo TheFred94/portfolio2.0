@@ -13,7 +13,7 @@
         :key="item.value"
       >
         <AccordionItem
-          class="focus-within:shadow-mauve12 mt-px overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10 focus-within:shadow-[0_0_0_2px]"
+          class="focus-within:shadow-mauve12 mt-10 overflow-hidden first:mt-0 first:rounded-t last:rounded-b focus-within:relative focus-within:z-10 focus-within:shadow-[0_0_0_2px]"
           :value="item.value"
         >
           <AccordionHeader class="flex bg-Bg">

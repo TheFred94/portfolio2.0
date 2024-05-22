@@ -10,6 +10,10 @@
   </div>
 
   <Accordions />
+
+  <BeakerIcon class="size-6 text-Bg" />
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { BeakerIcon } from '@heroicons/vue/24/solid';
+</script>
