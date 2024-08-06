@@ -10,8 +10,6 @@
   </div>
 
   <Accordions />
-
-  <BeakerIcon class="size-6 text-Bg" />
 </template>
 
 <script setup lang="ts">

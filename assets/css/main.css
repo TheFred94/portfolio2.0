@@ -35,6 +35,7 @@ h2 {
 }
 
 h3 {
+  font-family: 'Satoshi-Bold';
   font-size: 2.25rem;
   color: var(--Tx);
   font-weight: 500;
@@ -45,8 +46,19 @@ h4 {
   color: var(--Tx);
   font-weight: 500;
 }
+h5 {
+  font-size: 1.5rem;
+  color: var(--Tx);
+  font-weight: 500;
+}
 
 p {
+  font-size: 1rem;
+  color: var(--Tx);
+  font-weight: 400;
+}
+
+button {
   font-size: 1rem;
   color: var(--Tx);
   font-weight: 400;
