@@ -51,10 +51,10 @@
                 <div
                   v-for="image in item.stackImages"
                   :key="image"
-                  class="mr-2 text-"
+                  class="mr-2"
                 >
                   <NuxtImg
-                    class="w-6 h-6"
+                    class="w-6 h-6 text-Ac"
                     :src="image"
                     sizes="100vw sm:10vw md:50px"
                   />
@@ -62,7 +62,7 @@
               </div>
               <a
                 :href="item.link"
-                class="underline"
+                class="underline font-semibold text-lg hover:text-Ac w-fit"
                 >Link</a
               >
             </div>
@@ -105,6 +105,8 @@ const accordionItems = [
     projectIcon: '/images/Bolt.svg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    link: 'www.google.com',
+    stackImages: ['/images/stack-icons/vuejs.svg'],
   },
   {
     value: 'item-3',
@@ -113,6 +115,11 @@ const accordionItems = [
     projectIcon: '/images/Bolt.svg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    link: 'www.google.com',
+    stackImages: [
+      '/images/stack-icons/html.svg',
+      '/images/stack-icons/vuejs.svg',
+    ],
   },
 ];
 </script>
