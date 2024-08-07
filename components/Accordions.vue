@@ -2,7 +2,7 @@
   <div class="w-full overflow-hidden px-2 py-2">
     <AccordionRoot
       class=""
-      default-value="item-1"
+      default-value=""
       type="single"
       :collapsible="true"
     >
@@ -44,6 +44,7 @@
             </div>
           </AccordionHeader>
           <AccordionContent
+            :id="`radix-vue-accordion-content-${item.id}`"
             class="text-mauve11 bg-mauve2 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden"
           >
             <div class="px-5 py-4 bg-Sc text-Tx font-paragraphAc flex flex-col">
@@ -82,7 +83,6 @@ import {
   AccordionRoot,
   AccordionTrigger,
 } from 'radix-vue';
-import { ChevronDownIcon } from '@heroicons/vue/24/solid';
 import { ArrowRightIcon } from '@heroicons/vue/24/solid';
 
 const accordionItems = [
@@ -126,4 +126,9 @@ const accordionItems = [
     ],
   },
 ];
+
+console.log(
+  'Server-side IDs:',
+  accordionItems.map((_, index) => `radix-vue-accordion-content-${index}`)
+);
 </script>
