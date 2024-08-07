@@ -30,6 +30,7 @@
             <div class="p-4 bg-Sc flex justify-between">
               <h5>{{ item.title }}</h5>
               <AccordionTrigger
+                :id="`radix-vue-accordion-trigger-${item.id}`"
                 class="bg-Sc flex flex-1 cursor-default items-center bg-white outline-none group justify-end"
               >
                 <span
@@ -86,6 +87,7 @@ import { ArrowRightIcon } from '@heroicons/vue/24/solid';
 
 const accordionItems = [
   {
+    id: 1,
     value: 'item-1',
     projectTitle: 'Project #1',
     title: 'Is it accessible?',
@@ -99,6 +101,7 @@ const accordionItems = [
     ],
   },
   {
+    id: 2,
     value: 'item-2',
     projectTitle: 'Project #2',
     title: 'Is it unstyled?',
@@ -109,12 +112,13 @@ const accordionItems = [
     stackImages: ['/images/stack-icons/vuejs.svg'],
   },
   {
+    id: 3,
     value: 'item-3',
     projectTitle: 'Project #3',
     title: 'Can it be animated?',
     projectIcon: '/images/Bolt.svg',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     link: 'www.google.com',
     stackImages: [
       '/images/stack-icons/html.svg',
