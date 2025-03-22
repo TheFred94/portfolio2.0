@@ -44,7 +44,7 @@
             </div>
           </AccordionHeader>
           <AccordionContent
-            :id="`radix-vue-accordion-content-${item.id}`"
+            :id="`radix-vue-collapsible-content-${item.id}`"
             class="text-mauve11 bg-mauve2 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden"
           >
             <div class="px-5 py-4 bg-Sc text-Tx font-paragraphAc flex flex-col">
@@ -87,7 +87,7 @@ import { ArrowRightIcon } from '@heroicons/vue/24/solid';
 
 const accordionItems = [
   {
-    id: 1,
+    id: 0,
     value: 'item-1',
     projectTitle: 'Project #1',
     title: 'Is it accessible?',
@@ -101,7 +101,7 @@ const accordionItems = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     value: 'item-2',
     projectTitle: 'Project #2',
     title: 'Is it unstyled?',
@@ -112,7 +112,7 @@ const accordionItems = [
     stackImages: ['/images/stack-icons/vuejs.svg'],
   },
   {
-    id: 3,
+    id: 2,
     value: 'item-3',
     projectTitle: 'Project #3',
     title: 'Can it be animated?',
@@ -131,4 +131,11 @@ console.log(
   'Server-side IDs:',
   accordionItems.map((_, index) => `radix-vue-accordion-content-${index}`)
 );
+
+onMounted(() => {
+  console.log(
+    'CSR Accordion Items:',
+    accordionItems.map((item) => `radix-vue-accordion-content-${item.id}`)
+  );
+});
 </script>
